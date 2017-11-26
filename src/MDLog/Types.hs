@@ -43,7 +43,7 @@ newtype Supplements = Supplements
 
 data BioMetrics = BioMetrics
   { _bmWeight :: Maybe Scientific
-  , _bmLength :: Maybe Scientific
+  , _bmGrowth :: Maybe Scientific
   } deriving (Eq, Ord, Show)
 
 -- | Arbitrary text with some notes about day and stuff.
@@ -62,7 +62,7 @@ data Disease = Disease
   -- ^ Assessment of disease. 0 is very good (absolutely healthy), 10
   -- is very bad (absolutely ill)
   , _dNote                 :: Note
-  }
+  } deriving (Eq, Ord, Show)
 
 newtype Diseases = Diseases
   { unDiseases :: [Disease]

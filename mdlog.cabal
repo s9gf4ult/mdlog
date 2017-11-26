@@ -23,7 +23,7 @@ library
                      , scientific
                      , text
                      , time
-                     , units-parser
+                     , units-parser >= 0.1.1
   default-language:    Haskell2010
 
 executable mdlog-exe
