@@ -32,9 +32,6 @@ data SiPrefix
   | Nano
   deriving (Eq, Ord, Show)
 
-deriving instance (Eq a, Eq b) => Eq (UnitExp a b)
-deriving instance (Ord a, Ord b) => Ord (UnitExp a b)
-
 newtype Si = Si
   { unSi :: UnitExp SiPrefix SiUnit
   } deriving (Eq, Ord, Show)
